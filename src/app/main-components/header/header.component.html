@@ -1,10 +1,13 @@
 <div class="px-3 py-2 text-bg-dark border-bottom">
     <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
+        <div class="d-flex flex-wrap  justify-content-center justify-content-lg-start">
+            <a href="" class="d-flex flex-column my-2 my-lg-0 me-lg-auto text-white text-decoration-none gap-2">
+              <div class="align-items-center">
+                <span>Alessandro Mazzocchi</span>
+              </div>
+              <div class="align-items-center">
+                <span class="rotatingText-adjective">{{ currentAdjective }}</span>
+              </div>
             </a>
 
             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"  #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed"  >
@@ -23,7 +26,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-secondary">
+                    <a routerLink="/about" class="nav-link text-secondary">
                         <div class="d-flex flex-column gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
                                 class="bi bi-file-person align-self-center" viewBox="0 0 16 16">
@@ -48,7 +51,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-secondary">
+                    <a href="mailto:ale.maz097@gmail.com" class="nav-link text-secondary">
                         <div class="d-flex flex-column gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
                                 class="bi bi-envelope-arrow-up align-self-center" viewBox="0 0 16 16">
@@ -67,7 +70,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list" viewBox="0 0 16 16"
             (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                
+
             </svg>
             </div>
         </div>

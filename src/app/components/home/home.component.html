@@ -8,8 +8,8 @@
             </video>
         </div>
         -->
-        
-        
+
+
         <div class="container ">
             <div class="bg-secondary d-flex gap-3">
                 <div>
@@ -24,9 +24,12 @@
             <div>
                 <div class="row">
                     <div class="col-md-4">
-                        <h2>Feature 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique convallis.</p>
-                    </div>
+                      <h2 class="rotatingText-adjective"></h2>
+                        <img [src]="currentAdjective.logo" alt="{{ currentAdjective.name }}" class="tech_logos" />
+                          {{ currentAdjective.name }}
+                      </div>
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
                     <div class="col-md-4">
                         <h2>Feature 2</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique convallis.</p>
@@ -51,5 +54,5 @@
             </div>
         </div>
     </div>
-    
+
 </div>

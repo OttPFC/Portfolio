@@ -1,4 +1,24 @@
+.rotatingText-adjective {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  animation: fade 1s ease-in-out;
+}
 
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.tech_logos{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  transition: transform 0.5s;
+  &:hover{
+    transform: scale(1.1);
+  }
+border-radius: 50%;
+}
 
 /*
 
@@ -6,8 +26,8 @@
 .vid {
     position: relative;
     overflow: hidden;
-    width: 100%;  
-    height: 100vh; 
+    width: 100%;
+    height: 100vh;
 }
 
 #background-video {
@@ -17,12 +37,12 @@
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    z-index: -100; 
+    z-index: -100;
 }
 
 .bg-secondary {
     position: relative;
-    z-index: 1; 
-    
+    z-index: 1;
+
 }
     */
