@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
+  adjectives2 = ['Full Stack Developer', 'BackEnd Developer','FrontEnd Developer', 'Java Developer'];
+  currentIndex = 0;
+  currentAdjective2 = this.adjectives2[this.currentIndex];
+
   adjectives = [
     { name: 'JavaScript', logo: '/assets/img/js2_logo.png' },
     { name: 'Angular', logo: '/assets/img/angular_logo.png' },
@@ -14,11 +19,12 @@ export class HomeComponent {
     { name: 'PostgreSQL', logo: '/assets/img/postgres_logo2.png' }
   ];
 
-  currentIndex = 0;
+
   currentAdjective = this.adjectives[this.currentIndex];
 
   ngOnInit(): void {
     this.startTextRotation();
+    this.startTextRotation2();
   }
 
   startTextRotation() {
@@ -26,5 +32,12 @@ export class HomeComponent {
       this.currentIndex = (this.currentIndex + 1) % this.adjectives.length;
       this.currentAdjective = this.adjectives[this.currentIndex];
     }, 2000); // Cambia ogni 2 secondi
+  }
+
+  startTextRotation2() {
+    setInterval(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.adjectives2.length;
+      this.currentAdjective2 = this.adjectives2[this.currentIndex];
+    }, 3000);
   }
 }
