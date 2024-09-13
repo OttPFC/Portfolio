@@ -1,3 +1,26 @@
+.rotatingText { 
+  align-items: center;
+  display: flex;
+  
+  text-align: center;
+}
+
+.rotatingText-content { 
+  position: relative;
+  width: 100%;
+}
+
+.rotatingText-description { 
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0;
+  
+  @media (min-width: 768px) { 
+    font-size: 18px;
+  }
+}
+
 .rotatingText-adjective {
   font-family: "Open Sans", sans-serif;
   font-size: 50px;
@@ -24,11 +47,21 @@
   animation-duration: 1.5s;
   animation-delay: 1.75s;
 }
-
 .rotatingText-adjective:nth-of-type(3) {
-  animation-name: rotate-last;
+  animation-name: rotate;
   animation-duration: 1.5s;
   animation-delay: 3s;
+}
+.rotatingText-adjective:nth-of-type(4) {
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 4.50s;
+}
+
+.rotatingText-adjective:nth-of-type(5) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 6s;
   animation-fill-mode: forwards;
 }
 
@@ -73,29 +106,9 @@
 border-radius: 50%;
 }
 
-/*
-
-
-.vid {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
+.hero{
+width: 800px;
+height: 800px;
 }
 
-#background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -100;
-}
 
-.bg-secondary {
-    position: relative;
-    z-index: 1;
-
-}
-    */

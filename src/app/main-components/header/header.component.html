@@ -1,16 +1,12 @@
 <div class="px-3 py-2 text-bg-dark border-bottom">
-    <div class="container">
-        <div class="d-flex flex-wrap  justify-content-center justify-content-lg-start">
-            <a href="" class="d-flex flex-column my-2 my-lg-0 me-lg-auto text-white text-decoration-none gap-2">
-              <div class="align-items-center">
-                <span>Alessandro Mazzocchi</span>
-              </div>
-              <div class="align-items-center">
-                <span class="rotatingText-adjective">{{ currentAdjective }}</span>
-              </div>
-            </a>
+    <div class="">
+        <div class="d-flex flex-wrap  justify-content-lg-start">
+            <div class="d-flex flex-column align-self-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none gap-2">
+            <img src="assets/img/logo.jpg" alt="logo" class="logo">
+            </div>
 
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"  #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed"  >
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small" #collapse="ngbCollapse"
+                [(ngbCollapse)]="isCollapsed">
                 <li>
                     <a href="#" class="nav-link text-secondary">
                         <div class="d-flex flex-column gap-2">
@@ -39,7 +35,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-secondary">
+                    <a href="/projects" class="nav-link text-secondary">
                         <div class="d-flex flex-column gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
                                 class="bi bi-activity align-self-center" viewBox="0 0 16 16">
@@ -64,14 +60,31 @@
                         </div>
                     </a>
                 </li>
+                <li>
+                    <a href="assets/pdf/Alessandro_FullStack _Developer_CV.pdf" download
+                        class="nav-link text-secondary">
+                        <div class="d-flex flex-column gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                class="bi bi-envelope-arrow-up align-self-center" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
+                                <path
+                                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
+                            </svg>
+                            <span>Curriculum Vitae</span>
+                        </div>
+                    </a>
 
+                </li>
             </ul>
             <div class="menu-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list" viewBox="0 0 16 16"
-            (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list"
+                    viewBox="0 0 16 16" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+                    aria-controls="collapseExample">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
 
-            </svg>
+                </svg>
             </div>
         </div>
     </div>
