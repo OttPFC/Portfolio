@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
 .rotatingText { 
   align-items: center;
   display: flex;
-  
   text-align: center;
 }
 
@@ -33,9 +34,9 @@
   position: absolute;
   right: 0;
   text-align: center;
-  top: 0;
+  top: 500px;
 }
-
+/*
 .rotatingText-adjective:nth-of-type(1) {
   animation-name: rotate;
   animation-duration: 1.5s;
@@ -57,11 +58,15 @@
   animation-duration: 1.5s;
   animation-delay: 4.50s;
 }
-
 .rotatingText-adjective:nth-of-type(5) {
-  animation-name: rotate-last;
+  animation-name: rotate;
   animation-duration: 1.5s;
   animation-delay: 6s;
+}
+.rotatingText-adjective:nth-of-type(6) {
+  animation-name: rotate-last;
+  animation-duration: 1.5s;
+  animation-delay: 7.50s;
   animation-fill-mode: forwards;
 }
 
@@ -93,17 +98,25 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
-
+  .rotatingText-adjective {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+*/
 .tech_logos{
-  width: 40px;
-  height: 40px;
+  width: 150px;
+  height: 150px;
   margin: 5px;
   transition: transform 0.5s;
   &:hover{
     transform: scale(1.1);
   }
-border-radius: 50%;
+
 }
 
 .hero{
@@ -112,3 +125,151 @@ height: 800px;
 }
 
 
+
+.rotatingText-adjective.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.image, .image-2, .image-3 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+
+.image{
+    background-image: url("/assets/img/hero3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.image-2 {
+    background-image: url("/assets/img/hero3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.image-3 {
+    background-image: url("/assets/img/profile.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+  .caption-2 {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+  .banner{
+    color: #ddd;
+    background-color:#282E34;
+    
+    text-align:center;
+    
+    
+  }
+
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+
+
+.marg{
+  margin-top: 280px;
+}
+
+
+
+
+  /* CSS */
+  .button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+  #topButton {
+    display: none; /* Nasconde il bottone inizialmente */
+    position: fixed;
+    bottom: 20px; /* Posizionato 20px dal fondo della pagina */
+    right: 30px;  /* Posizionato 30px dalla destra della pagina */
+    z-index: 99;  /* Assicura che il bottone rimanga sopra gli altri elementi */
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  #topButton:hover {
+    background-color: #333;
+  }
+  
