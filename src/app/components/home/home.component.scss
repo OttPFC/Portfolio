@@ -36,7 +36,7 @@
   text-align: center;
   top: 500px;
 }
-/*
+
 .rotatingText-adjective:nth-of-type(1) {
   animation-name: rotate;
   animation-duration: 1.5s;
@@ -107,7 +107,7 @@
   transform: translateY(50px);
   transition: all 0.5s ease-in-out;
 }
-*/
+
 .tech_logos{
   width: 150px;
   height: 150px;
@@ -132,7 +132,7 @@ height: 800px;
 }
 
 
-.image, .image-2, .image-3 {
+.image, .image-3 {
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -146,23 +146,15 @@ height: 800px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.image-2 {
-    background-image: url("/assets/img/hero3.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    height: 750px;
 }
 
 .image-3 {
-    background-image: url("/assets/img/profile.jpeg");
+    background-image: url("/assets/img/prog2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 750px;
     
 }
 
@@ -187,10 +179,7 @@ height: 800px;
   .banner{
     color: #ddd;
     background-color:#282E34;
-    
     text-align:center;
-    
-    
   }
 
   @media only screen and (max-device-width: 1024px) {
@@ -199,15 +188,11 @@ height: 800px;
     }
   }
 
-
 .marg{
   margin-top: 280px;
 }
 
-
-
-
-  /* CSS */
+  /* About me button */
   .button-30 {
     align-items: center;
     appearance: none;
@@ -254,11 +239,11 @@ height: 800px;
   }
 
   #topButton {
-    display: none; /* Nasconde il bottone inizialmente */
+    display: none; 
     position: fixed;
-    bottom: 20px; /* Posizionato 20px dal fondo della pagina */
-    right: 30px;  /* Posizionato 30px dalla destra della pagina */
-    z-index: 99;  /* Assicura che il bottone rimanga sopra gli altri elementi */
+    bottom: 20px; 
+    right: 30px;  
+    z-index: 99;  
     font-size: 18px;
     border: none;
     outline: none;

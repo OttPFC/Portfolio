@@ -8,12 +8,9 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 export class HomeComponent {
   @ViewChild('rotatingText') rotatingText!: ElementRef;
 
-  adjectives = [
-    'Full Stack Developer', 'BackEnd Developer', 'FrontEnd Developer', 
-    'Java Developer', 'Full Stack Developer 👌','<button class="button-30" role="button" routerLink="/about">About me</button>'
-  ];
   
-  adjectives4 = [
+  
+  adjectives = [
     { name: 'JavaScript', logo: '/assets/img/logo-javascript.svg' },
     { name: 'Html', logo: '/assets/img/html-1.svg' },
     { name: 'Angular', logo: '/assets/img/angular-icon.svg' },
@@ -45,7 +42,7 @@ export class HomeComponent {
   ]
 
   currentIndex = 0;
-  currentAdjective4 = this.adjectives4[this.currentIndex];
+  currentAdjective = this.adjectives[this.currentIndex];
   currentAdjective2 = this.adjectives2[this.currentIndex];
   currentAdjective3 = this.adjectives3[this.currentIndex];
   observer!: IntersectionObserver;
@@ -53,15 +50,15 @@ export class HomeComponent {
   showButton = false;
   
   ngOnInit(): void {
-    this.startTextRotation4();
+    this.startTextRotation();
     this.startTextRotation2();
     this.startTextRotation3();
   }
 
-  startTextRotation4() {
+  startTextRotation() {
     setInterval(() => {
-      this.currentIndex = (this.currentIndex + 1) % this.adjectives4.length;
-      this.currentAdjective4 = this.adjectives4[this.currentIndex];
+      this.currentIndex = (this.currentIndex + 1) % this.adjectives.length;
+      this.currentAdjective = this.adjectives[this.currentIndex];
     }, 2000); 
   }
 
@@ -82,7 +79,7 @@ export class HomeComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const button = document.getElementById("topButton");
-    if (window.scrollY > 3000) {  
+    if (window.scrollY > 1800) {  
       button!.style.display = "block";
     } else {
       button!.style.display = "none";
@@ -92,47 +89,11 @@ export class HomeComponent {
   topFunction() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  ngAfterViewInit(): void {
-    // Intersection Observer configuration
-    this.observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Se visibile, avvia l'animazione
-          this.startTextRotation();
-        } else {
-          // Se non visibile, ferma l'animazione
-          this.stopTextRotation();
-        }
-      });
-    });
+  
 
-    // Osserva l'elemento rotatingText
-    this.observer.observe(this.rotatingText.nativeElement);
-  }
+  
 
-  startTextRotation() {
-    this.intervalId = setInterval(() => {
-      this.currentIndex = (this.currentIndex + 1) % this.adjectives.length;
-      this.updateAdjective(); // Aggiorna l'aggettivo corrente
-    }, 1000); // Cambia ogni 2 secondi
-  }
+  
 
-  stopTextRotation() {
-    if (this.intervalId) {
-      clearInterval(this.intervalId);
-    }
-  }
-
-  updateAdjective() {
-    const rotatingAdjectives = this.rotatingText.nativeElement.querySelectorAll('.rotatingText-adjective');
-    rotatingAdjectives.forEach((adjective: HTMLElement, index: number) => {
-      if (index === this.currentIndex) {
-        adjective.style.opacity = '1';
-        adjective.style.transform = 'translateY(0)';
-      } else {
-        adjective.style.opacity = '0';
-        adjective.style.transform = 'translateY(50px)';
-      }
-    });
-  }
+  
 }

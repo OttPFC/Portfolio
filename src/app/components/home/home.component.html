@@ -1,10 +1,22 @@
 <div class="image">
     <div class="container  px-4 py-5 ">
-        
+        <div class="row justify-content-between marg g-5 py-5 ">
+            
+        </div>
+    </div>
+</div>
+<div class="position-relative">
+    <div class="banner py-5">
+        <p></p>
+    </div>
+    
+</div>
+<div class="image-3 ">
+    <div class="container  px-4 py-5 ">
         <div class="row justify-content-between marg g-5 py-5 ">
             <div class="col-1 ">
                 <h2 class="rotatingText-adjective"></h2>
-                    <img [src]="currentAdjective4.logo" alt="{{ currentAdjective4.name }}" class="tech_logos" />
+                    <img [src]="currentAdjective.logo" alt="{{ currentAdjective.name }}" class="tech_logos" />
                     
             </div>
             <div class="col-1 ">
@@ -21,48 +33,11 @@
     </div>
 </div>
 <div class="position-relative">
-    <div class="banner py-5">
+    <div class="banner py-3">
         <p></p>
     </div>
     
 </div>
-<div class="image-2">
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-lg-5 py-5">
-            <div class="col-md-10 mx-auto col-lg-5 opacity-50">
-                
-            </div>
-            <div class="col-lg-7 text-end align-items-end">
-                <div class="text-white">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="position-relative">
-    <div class="banner py-4">
-        <p></p>
-
-    </div>
-</div>
-<div class="image-3 ">
-    <div class="container col-xxl-8 px-4  caption-2">
-        <div class="row flex-lg-row-reverse align-items-center g-5 ">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <div class="d-flex flex-column gap-2 d-md-flex justify-content-md-end align-items-end">
-                    
-                </div>
-            </div>
-            <div class="col-lg-6 text-center ">
-
-                
-
-            </div>
-        </div>
-    </div>
-</div>
-
 <div>
     <div class="vid">
         <!--
@@ -84,13 +59,8 @@
                         <img src="assets/img/hero3.jpg" class="hero " alt="">
                     </div>
                     <div class="col-4 p-0">
-                        <div #rotatingText class="rotatingText mt-5">
-                            <div class="rotatingText-content">
-                              <p class="rotatingText-description">I'll make your program&hellip;</p>
-                              <h2 class="rotatingText-adjective" *ngFor="let adjective of adjectives">{{ adjective }}</h2>
-                            </div>
-                          </div>
-                        <!--<div class="rotatingText mt-5">
+                        
+                        <div class="rotatingText mt-5">
                             <div class="rotatingText-content">
                                 <p class="rotatingText-description">
                                     I'll make your program&hellip;
@@ -103,7 +73,7 @@
                                 <h2 class="rotatingText-adjective"><button class="button-30" role="button" routerLink="/about">About me</button></h2>
                                 
                             </div>
-                        </div> -->
+                        </div> 
                         
                         <div class="text-center">
                             <img src="assets/img/profile.jpeg" height="500" alt="">
@@ -152,5 +122,5 @@
         </div>
     </div>
     </div>
-    <!-- Bottone "Torna in cima" -->
-<button onclick="topFunction()" id="topButton" title="Torna in cima">Top</button>
+    
+    <button id="topButton"  title="Torna in cima" (click)="topFunction()">Top</button>
