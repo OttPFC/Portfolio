@@ -7,4 +7,37 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+  counters: Record<string, number> = {
+    number1: 0,
+    number2: 0,
+    number3: 0,
+    number4: 0,
+    number5: 0,
+    number6: 0
+  };
+
+  ngOnInit() {
+    this.animateCounter('number1', 0.9, 3000);
+    this.animateCounter('number2', 0.946, 700);
+    this.animateCounter('number3', 0.81, 3100);
+    this.animateCounter('number4', 0.16, 3450);
+    this.animateCounter('number5', 0.472, 3300);
+    this.animateCounter('number6', 224, 2175);
+  }
+
+  
+  animateCounter(prop: string, end: number, duration: number) {
+    const start = 0;
+    const increment = Math.ceil(end / (duration / 100)); 
+    let current = start;
+
+    const interval = setInterval(() => {
+      current += increment;
+      if (current > end) {
+        current = end;
+        clearInterval(interval); 
+      }
+      this.counters[prop] = current; 
+    }, 100); 
+  }
 }

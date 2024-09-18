@@ -1,76 +1,220 @@
-<div class="row m-0 mb-2 mt-2 ms-3">
-    <div class="col-5 p-0 ">
-        <img src="assets/img/macchine.PNG" height="400" width="750" alt="">
+<div class="row m-0 mb-2 mt-2 ">
+  <div class="col-5 p-0 ">
+    <div class="relative">
+      <img src="assets/img/macchine.PNG" height="400" width="650" alt="" class="img-proj">
+      <div class="description2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo sint laboriosam mollitia, magnam numquam saepe, itaque porro veritatis laborum ducimus quibusdam tempora ut aperiam perspiciatis eaque nesciunt autem?</p>
+      </div>
     </div>
+  </div>
     <div class="col-6 p-0 m-0">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="d-flex align-items-center mb-3">Project Technologies</h5>
-                <p>HTML</p>
-                <div class="progress mb-3" style="height: 5px">
-                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
-                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p>CSS</p>
-                <div class="progress mb-3" style="height: 5px">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 72%"
-                        aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p>TypeScript</p>
-                <div class="progress mb-3" style="height: 5px">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 89%"
-                        aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p>Angular</p>
-                <div class="progress mb-3" style="height: 5px">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 55%"
-                        aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                
+      <div class="container">
+          <div class="box">
+            <div class="shadow"></div>
+            <div class="content">
+              <div class="percent" data-text="TS" style="--num: 90">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+              </div>
+              <div class="number">
+                <h2>90<span>%</span></h2>
+              </div>
             </div>
+          </div>
+        
+          <div class="box">
+            <div class="shadow"></div>
+            <div class="content">
+              <div class="percent" data-text="Angular" style="--num: 50">
+                <div class="dot"></div>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+              </div>
+              <div class="number">
+                <h2>50<span>%</span></h2>
+              </div>
+            </div>
+          </div>
+        
+          
         </div>
+  </div>
+</div>
+
+<div class="row m-0 mb-2 mt-2">
+  <div class="col-5 p-0 ">
+    <div class="relative">
+      <img src="assets/img/list.PNG" height="400" alt="">
+      <div class="description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo sint laboriosam mollitia, magnam numquam saepe, itaque porro veritatis laborum ducimus quibusdam tempora ut aperiam perspiciatis eaque nesciunt autem?</p>
+      </div>
+    </div>
+  </div>
+    
+    <div class="col-6 p-0 m-0">
+      <div class="container2">
+        <h1 class="heading">This Projects in Numbers</h1>
+        <div class="counter">
+          <div class="item">
+            <p class="number">{{ counters['number1'] | percent:'1.0-0' }}</p>
+            <p class="label">Hours coding</p>
+          </div>
+          <div class="item">
+            <p class="number">{{ counters['number2']  | percent:'2.0-0'}}</p>
+            <p class="label">Photos taken</p>
+          </div>
+          <div class="item">
+            <p class="number">{{ counters['number3']  | percent:'2.0-0'}}</p>
+            <p class="label">Hours commuting</p>
+          </div>
+          <div class="item">
+            <p class="number">{{ counters['number4']  | percent:'2.0-0'}}</p>
+            <p class="label">Projects done</p>
+          </div>
+          <div class="item">
+            <p class="number">{{ counters['number5']  | percent:'2.0-0'}}</p>
+            <p class="label">Tweets sent</p>
+          </div>
+          <div class="item">
+            <p class="number">{{ counters['number6']  | percent:'2.0-0'}}</p>
+            <p class="label">Cups of coffee</p>
+          </div>
+        </div>
+        
+      </div>
     </div>
 </div>
 
 <div class="row m-0 mb-2 mt-2">
-    <div class="col-5 p-0 m-0">
-        <img src="assets/img/list.PNG" height="400" alt="">
+  <div class="col-5 p-0 ">
+    <div class="relative">
+      <img src="assets/img/list.PNG" height="400" alt="">
+      <div class="description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo sint laboriosam mollitia, magnam numquam saepe, itaque porro veritatis laborum ducimus quibusdam tempora ut aperiam perspiciatis eaque nesciunt autem?</p>
+      </div>
     </div>
-    <div class="col-6 p-0 m-0">
-        <div class="container">
-            <div class="box">
-              <div class="shadow"></div>
-              <div class="content">
-                <div class="percent" data-text="TS" style="--num: 90">
-                  <div class="dot"></div>
-                  <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                  </svg>
-                </div>
-                <div class="number">
-                  <h2>90<span>%</span></h2>
-                </div>
-              </div>
-            </div>
-          
-            <div class="box">
-              <div class="shadow"></div>
-              <div class="content">
-                <div class="percent" data-text="Angular" style="--num: 50">
-                  <div class="dot"></div>
-                  <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                  </svg>
-                </div>
-                <div class="number">
-                  <h2>50<span>%</span></h2>
-                </div>
-              </div>
-            </div>
-          
-            
-          </div>
+  </div>
+  <div class="col-6 p-0 m-0">
+    <div class="container2">
+      <h1 class="heading">This Projects in Numbers</h1>
+      <div class="counter">
+        <div class="item">
+          <p class="number">{{ counters['number1'] | percent:'1.0-0' }}</p>
+          <p class="label">Hours coding</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number2']  | percent:'2.0-0'}}</p>
+          <p class="label">Photos taken</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number3']  | percent:'2.0-0'}}</p>
+          <p class="label">Hours commuting</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number4']  | percent:'2.0-0'}}</p>
+          <p class="label">Projects done</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number5']  | percent:'2.0-0'}}</p>
+          <p class="label">Tweets sent</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number6']  | percent:'2.0-0'}}</p>
+          <p class="label">Cups of coffee</p>
+        </div>
+      </div>
+      
     </div>
+  </div>
+</div>
+
+<div class="row m-0 mb-2 mt-2">
+  <div class="col-5 p-0 ">
+    <div class="relative">
+      <img src="assets/img/list.PNG" height="400" alt="">
+      <div class="description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo sint laboriosam mollitia, magnam numquam saepe, itaque porro veritatis laborum ducimus quibusdam tempora ut aperiam perspiciatis eaque nesciunt autem?</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 p-0 m-0">
+    <div class="container2">
+      <h1 class="heading">This Projects in Numbers</h1>
+      <div class="counter">
+        <div class="item">
+          <p class="number">{{ counters['number1'] | percent:'1.0-0' }}</p>
+          <p class="label">Hours coding</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number2']  | percent:'2.0-0'}}</p>
+          <p class="label">Photos taken</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number3']  | percent:'2.0-0'}}</p>
+          <p class="label">Hours commuting</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number4']  | percent:'2.0-0'}}</p>
+          <p class="label">Projects done</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number5']  | percent:'2.0-0'}}</p>
+          <p class="label">Tweets sent</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number6']  | percent:'2.0-0'}}</p>
+          <p class="label">Cups of coffee</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row m-0 mb-2 mt-2">
+  <div class="col-5 p-0 ">
+    <div class="relative">
+      <img src="assets/img/list.PNG" height="400" alt="">
+      <div class="description">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo sint laboriosam mollitia, magnam numquam saepe, itaque porro veritatis laborum ducimus quibusdam tempora ut aperiam perspiciatis eaque nesciunt autem?</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 p-0 m-0">
+    <div class="container2">
+      <h1 class="heading">This Projects in Numbers</h1>
+      <div class="counter">
+        <div class="item">
+          <p class="number">{{ counters['number1'] | percent:'1.0-0' }}</p>
+          <p class="label">Hours coding</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number2']  | percent:'2.0-0'}}</p>
+          <p class="label">Photos taken</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number3']  | percent:'2.0-0'}}</p>
+          <p class="label">Hours commuting</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number4']  | percent:'2.0-0'}}</p>
+          <p class="label">Projects done</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number5']  | percent:'2.0-0'}}</p>
+          <p class="label">Tweets sent</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number6']  | percent:'2.0-0'}}</p>
+          <p class="label">Cups of coffee</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </div>

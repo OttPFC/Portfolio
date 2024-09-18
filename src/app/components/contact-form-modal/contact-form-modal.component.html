@@ -1,0 +1,29 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Inviami un messaggio</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <form (ngSubmit)="sendEmail($event)">
+        <div class="mb-3">
+          <label for="name">Nome</label>
+          <input id="name" name="name" class="form-control" placeholder="Inserisci il tuo nome" required />
+        </div>
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" class="form-control" placeholder="Inserisci la tua email" required />
+        </div>
+        <div class="mb-3">
+          <label for="message">Messaggio</label>
+          <textarea id="message" name="message" class="form-control" placeholder="Scrivi qui il tuo messaggio" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-secondary" (click)="modal.close('Save click')">Invia</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-secondary" (click)="modal.close('Save click')">Chiudi</button>
+    </div>
+  </ng-template>
+  
+  <button class="btn btn-outline-primary" (click)="open(content)">Contattami</button>
+  

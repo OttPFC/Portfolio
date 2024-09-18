@@ -1,126 +1,100 @@
 <div class="image">
-    <div class="container  px-4 py-5 ">
-        <div class="row justify-content-between marg g-5 py-5 ">
-            
+    <div class="text-center px-4 py-5 ">
+        <div class="row justify-content-between marg g-5 py-5 back">
+            <div class="col-6">
+                <h2>I miei Progetti</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique
+                    convallis.</p>
+                <button class="button-30" routerLink="/projects">Progetti</button>
+            </div>
+            <div class="col-6">
+                <h2>Contattami</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique
+                    convallis.</p>
+                <button class="button-30" routerLink="/about">Contattami</button>
+            </div>
         </div>
     </div>
 </div>
 <div class="position-relative">
-    <div class="banner py-5">
-        <p></p>
+
+    <div class="text-white text-center  size-text  back2">
+        Tecnologie usate per i progetti
     </div>
-    
 </div>
 <div class="image-3 ">
-    <div class="container  px-4 py-5 ">
+    <div class="container   px-4 py-5 ">
         <div class="row justify-content-between marg g-5 py-5 ">
             <div class="col-1 ">
                 <h2 class="rotatingText-adjective"></h2>
-                    <img [src]="currentAdjective.logo" alt="{{ currentAdjective.name }}" class="tech_logos" />
-                    
+                <img [src]="currentAdjective.logo" alt="{{ currentAdjective.name }}" class="tech_logos" />
             </div>
             <div class="col-1 ">
                 <h2 class="rotatingText-adjective"></h2>
-                    <img [src]="currentAdjective2.logo" alt="{{ currentAdjective2.name }}" class="tech_logos" />
-                    
+                <img [src]="currentAdjective2.logo" alt="{{ currentAdjective2.name }}" class="tech_logos" />
+
             </div>
             <div class="col-1 ">
                 <h2 class="rotatingText-adjective"></h2>
-                    <img [src]="currentAdjective3.logo" alt="{{ currentAdjective3.name }}" class="tech_logos" />
-                    
+                <img [src]="currentAdjective3.logo" alt="{{ currentAdjective3.name }}" class="tech_logos" />
+
             </div>
         </div>
     </div>
 </div>
 <div class="position-relative">
-    <div class="banner py-3">
-        <p></p>
+    <div class=" text-center size-text back-about">
+        Qualcosa su di me
     </div>
-    
+
 </div>
 <div>
     <div class="vid">
-        <!--
-        <div>
-            <video autoplay muted loop id="background-video">
-                <source src="/assets/video/coding.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <img src="/assets/img/3F3C93C5-9A0E-4DB6-9ED4-C390E15CA6C2.JPG" width="400px" height="600px" class="p-1" alt="">
-        <span class="rotatingText-adjective ms-3">{{ currentAdjective2 }}</span>
-        -->
+        <div class="bg-secondary ">
+            <div class="row m-0">
+                <div class="col-6 p-0 me-4">
+                    <div class="relative">
+                        <img src="assets/img/hero1.jpg" class="hero img-proj" alt="">
+                        <div id="des" class="description">
 
-
-        <div class="bg-secondary">
-            <div class="">
-                <div class="row m-0">
-                    <div class="col-6 p-0 me-4">
-                        <img src="assets/img/hero3.jpg" class="hero " alt="">
-                    </div>
-                    <div class="col-4 p-0">
-                        
-                        <div class="rotatingText mt-5">
-                            <div class="rotatingText-content">
-                                <p class="rotatingText-description">
-                                    I'll make your program&hellip;
-                                </p>
-                                <h2 class="rotatingText-adjective">Full Stack Developer</h2>
-                                <h2 class="rotatingText-adjective">BackEnd Developer</h2>
-                                <h2 class="rotatingText-adjective">FrontEnd Developer</h2>
-                                <h2 class="rotatingText-adjective">Java Developer</h2>
-                                <h2 class="rotatingText-adjective">Full Stack Developer 👌</h2>
-                                <h2 class="rotatingText-adjective"><button class="button-30" role="button" routerLink="/about">About me</button></h2>
-                                
-                            </div>
-                        </div> 
-                        
-                        <div class="text-center">
-                            <img src="assets/img/profile.jpeg" height="500" alt="">
+                            <p>Sono estremamente
+                                motivato a sviluppare
+                                costantemente le mie
+                                competenze, le mie skills e a
+                                crescere professionalmente.
+                                Trovo molto stimolante il
+                                lavoro di gruppo per i
+                                benefici che comporta, il
+                                confronto e lo scambio di
+                                idee sono sempre alla base
+                                della crescita personale e
+                                professionale.
+                                Se non hai obiettivi, non hai
+                                la spinta giusta
                         </div>
                     </div>
-
                 </div>
-            </div>
-
-        </div>
-        <div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="col-4 p-0">
+                    <div class="rotatingText mt-5">
+                        <div class="rotatingText-content">
+                            <p class="rotatingText-description">
+                                I'll make your program&hellip;
+                            </p>
+                            <h2 class="rotatingText-adjective">Full Stack Developer</h2>
+                            <h2 class="rotatingText-adjective">BackEnd Developer</h2>
+                            <h2 class="rotatingText-adjective">FrontEnd Developer</h2>
+                            <h2 class="rotatingText-adjective">Java Developer</h2>
+                            <h2 class="rotatingText-adjective">Full Stack Developer 👌</h2>
+                            <h2 class="rotatingText-adjective"><button class="button-30" role="button"
+                                    routerLink="/about">About me</button></h2>
+                        </div>
                     </div>
-                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-
-                        <div class="col-md-4">
-                            <h2>Feature 2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique
-                                convallis.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>Feature 3</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique
-                                convallis.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>Feature 1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique
-                                convallis.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>Feature 2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique
-                                convallis.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>Feature 3</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique
-                                convallis.</p>
-                        </div>
+                    <div class="text-center">
+                        <img src="assets/img/profile.jpeg" height="500" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    
-    <button id="topButton"  title="Torna in cima" (click)="topFunction()">Top</button>
+</div>
+<button id="topButton" title="Torna in cima" (click)="topFunction()">Top</button>

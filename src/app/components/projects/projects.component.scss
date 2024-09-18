@@ -219,3 +219,117 @@
   font-weight: 300;
   font-size: 1.5rem;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+.container2 {
+  margin: 0 auto;
+  width: 60% !important;
+  float: none;
+  min-height: 1px;
+  height: 100%;
+}
+.heading {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3.5em;
+  margin-top: 5%;
+}
+.counter{
+  display: flex;
+  margin-top: 3%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.counter .item{
+  vertical-align: middle;
+  width: 16.66%;
+  height: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.counter .item i{
+  color: rgba(25, 25, 25, 0.9);
+  font-size: 4em;
+  text-shadow: 1px 1px 1px #ccc;
+}
+.counter .item p.number{
+  color: rgba(21, 21, 21, 1.0);
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #ccc;
+}
+.counter .item p.label{
+  color: rgba(25, 25, 25, 0.9);
+  font-size: 1.1em;
+  text-shadow: 1px 1px 1px #ccc;
+  text-transform: lowercase;
+}
+.counter .item:hover i, 
+.counter .item:hover p{
+  color: rgba(10, 10, 10, 1.0);
+}
+
+@media (max-width: 786px){
+  .counter .item {
+     flex: 0 0 50%;
+  }
+}
+.relative {
+  position: relative;
+}
+
+.img-proj {
+  transition: opacity 0.5s ease;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitrasparente per migliorare la leggibilità */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 20px; /* Aggiungi un po' di spazio attorno al testo */
+  width: 651px;
+}
+.description2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitrasparente per migliorare la leggibilità */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 20px; /* Aggiungi un po' di spazio attorno al testo */
+  width: 650px;
+}
+
+.relative:hover .img-proj {
+  opacity: 0.4;
+}
+
+.relative:hover .description {
+  opacity: 1;
+}
+.relative:hover .description2 {
+  opacity: 1;
+}
+

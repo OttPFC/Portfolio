@@ -50,50 +50,42 @@ export class HomeComponent {
   showButton = false;
   
   ngOnInit(): void {
-    this.startTextRotation();
-    this.startTextRotation2();
-    this.startTextRotation3();
+    this.startRotation();
   }
 
-  startTextRotation() {
+  startRotation(){
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.adjectives.length;
       this.currentAdjective = this.adjectives[this.currentIndex];
     }, 2000); 
-  }
-
-  startTextRotation2() {
+    
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.adjectives2.length;
       this.currentAdjective2 = this.adjectives2[this.currentIndex];
     }, 3000);
-  }
-
-  startTextRotation3() {
+    
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.adjectives3.length;
       this.currentAdjective3 = this.adjectives3[this.currentIndex];
     }, 1000);
   }
+  
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const button = document.getElementById("topButton");
-    if (window.scrollY > 1800) {  
+    const des = document.getElementById("des");
+    if (window.scrollY > 1500 && 1900) {  
       button!.style.display = "block";
+      des!.style.opacity = "1";
     } else {
       button!.style.display = "none";
+      des!.style.opacity = "0";
     }
   }
-
+  
   topFunction() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  
-
-  
-
-  
-
   
 }

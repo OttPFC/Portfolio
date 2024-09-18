@@ -9,6 +9,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
+import { FormsModule, NgForm } from '@angular/forms';
+import { ContactFormModalComponent } from './components/contact-form-modal/contact-form-modal.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,15 @@ import { HomeComponent } from './components/home/home.component';
     FooterComponent,
     AboutComponent,
     ProjectsComponent,
-    HomeComponent
+    HomeComponent,
+    ContactFormModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
