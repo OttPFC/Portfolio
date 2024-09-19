@@ -1,17 +1,17 @@
-<div class="px-3 py-2 text-bg-dark border-bottom">
-    <div class="">
-        <div class="d-flex flex-wrap  justify-content-lg-start">
-            <div class="d-flex flex-column align-self-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none gap-2">
-            <img src="assets/img/logo.jpg" alt="logo" class="logo">
-            </div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Twelfth navbar example">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
+            aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small" #collapse="ngbCollapse"
-                [(ngbCollapse)]="isCollapsed">
-                <li>
-                    <a href="#" class="nav-link text-secondary">
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a routerLink="/home" class="nav-link active text-secondary" aria-current="page">
                         <div class="d-flex flex-column gap-2">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=""
                                 class="bi bi-house align-self-center" viewBox="0 0 16 16">
                                 <path
                                     d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
@@ -21,14 +21,140 @@
                         </div>
                     </a>
                 </li>
-                <li>
-                    <a routerLink="/about" class="nav-link text-secondary">
+                <li class="nav-item">
+                    <a routerLink="/about" class="nav-link active text-secondary" aria-current="page">
                         <div class="d-flex flex-column gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=""
                                 class="bi bi-file-person align-self-center" viewBox="0 0 16 16">
                                 <path
                                     d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
                                 <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg>
+                            <span class="align-self-center">About</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/projects" class="nav-link text-secondary">
+                        <div class="d-flex flex-column gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=""
+                                class="bi bi-activity align-self-center" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2" />
+                            </svg>
+                            <span class="align-self-center">Projects</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown align-self-center d-lg-none">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="d-flex flex-column gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle align-self-center" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                                </svg>
+                                <span class="align-self-center">Info</span>
+                            </div>
+                        </a>
+                    
+                    <ul class="dropdown-menu">
+                        <li><a href="mailto:ale.maz097@gmail.com" class="dropdown-item text-secondary">
+                                <div class="d-flex gap-5">
+                                    <span>Contact me</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=""
+                                        class="bi bi-envelope-arrow-up align-self-center" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
+                                        <path
+                                            d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="assets/pdf/Alessandro_FullStack _Developer_CV.pdf" download
+                                class="dropdown-item text-secondary">
+                                <div class="d-flex gap-2">
+                                    <span class="ms-1">Curriculum Vitae</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=""
+                                        class="bi bi-envelope-arrow-up align-self-center" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
+                                        <path
+                                            d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item d-sm-none d-lg-block">
+                    <a href="mailto:ale.maz097@gmail.com" class="nav-link text-secondary">
+                        <div class="d-flex flex-column gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=""
+                            class="bi bi-envelope-arrow-up align-self-center" viewBox="0 0 16 16">
+                            <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
+                            <path
+                            d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
+                        </svg>
+                        <span>Contact me</span>
+                    </div>
+                </a>
+                </li>
+                <li class="nav-item d-sm-none d-lg-block">
+                    <a href="assets/pdf/Alessandro_FullStack _Developer_CV.pdf" download
+            class="nav-link text-secondary">
+            <div class="d-flex flex-column gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill=""
+                class="bi bi-envelope-arrow-up align-self-center" viewBox="0 0 16 16">
+                <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
+                <path
+                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
+            </svg>
+            <span>CV</span>
+        </div>
+    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--
+    <div class="px-3 py-2 text-bg-dark border-bottom">
+        <div class="">
+            <div class="d-flex flex-wrap  justify-content-lg-start">
+                <div class="d-flex flex-column align-self-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none gap-2">
+                    <img src="assets/img/logo.jpg" alt="logo" class="logo">
+                </div>
+                
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small" #collapse="ngbCollapse"
+                [(ngbCollapse)]="isCollapsed">
+                <li>
+                    <a href="#" class="nav-link text-secondary">
+                        <div class="d-flex flex-column gap-2">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                            class="bi bi-house align-self-center" viewBox="0 0 16 16">
+                            <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                        </svg>
+                        
+                        <span class="align-self-center">Home</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a routerLink="/about" class="nav-link text-secondary">
+                    <div class="d-flex flex-column gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                        class="bi bi-file-person align-self-center" viewBox="0 0 16 16">
+                        <path
+                        d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
                             </svg>
                             <span>About</span>
                         </div>
@@ -38,54 +164,56 @@
                     <a href="/projects" class="nav-link text-secondary">
                         <div class="d-flex flex-column gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                class="bi bi-activity align-self-center" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2" />
-                            </svg>
-                            <span>Projects</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:ale.maz097@gmail.com" class="nav-link text-secondary">
-                        <div class="d-flex flex-column gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                class="bi bi-envelope-arrow-up align-self-center" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
-                                <path
-                                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
-                            </svg>
-                            <span>Contact me</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="assets/pdf/Alessandro_FullStack _Developer_CV.pdf" download
-                        class="nav-link text-secondary">
-                        <div class="d-flex flex-column gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
-                                class="bi bi-envelope-arrow-up align-self-center" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
-                                <path
-                                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
-                            </svg>
-                            <span>Curriculum Vitae</span>
-                        </div>
-                    </a>
-
-                </li>
-            </ul>
-            <div class="menu-pointer align-self-center ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list "
-                    viewBox="0 0 16 16" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
-                    aria-controls="collapseExample">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-
-                </svg>
-            </div>
+                            class="bi bi-activity align-self-center" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                            d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2" />
+                        </svg>
+                        <span>Projects</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:ale.maz097@gmail.com" class="nav-link text-secondary">
+                    <div class="d-flex flex-column gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                        class="bi bi-envelope-arrow-up align-self-center" viewBox="0 0 16 16">
+                        <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
+                        <path
+                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
+                    </svg>
+                    <span>Contact me</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="assets/pdf/Alessandro_FullStack _Developer_CV.pdf" download
+            class="nav-link text-secondary">
+            <div class="d-flex flex-column gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                class="bi bi-envelope-arrow-up align-self-center" viewBox="0 0 16 16">
+                <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
+                <path
+                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
+            </svg>
+            <span>Curriculum Vitae</span>
         </div>
-    </div>
+    </a>
+
+</li>
+</ul>
+<div class="menu-pointer align-self-center ">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list "
+    viewBox="0 0 16 16" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+    aria-controls="collapseExample">
+    <path fill-rule="evenodd"
+    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+    
+</svg>
 </div>
+</div>
+</div>
+</div>
+
+-->

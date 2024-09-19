@@ -17,12 +17,12 @@ export class ProjectsComponent {
   };
 
   ngOnInit() {
-    this.animateCounter('number1', 0.9, 3000);
-    this.animateCounter('number2', 0.946, 700);
-    this.animateCounter('number3', 0.81, 3100);
-    this.animateCounter('number4', 0.16, 3450);
-    this.animateCounter('number5', 0.472, 3300);
-    this.animateCounter('number6', 224, 2175);
+    this.animateCounter('number1', 90, 3000);
+    this.animateCounter('number2', 80, 1700);
+    this.animateCounter('number3', 81, 3100);
+    this.animateCounter('number4', 16, 3450);
+    this.animateCounter('number5', 47, 3300);
+    this.animateCounter('number6', 24, 2175);
   }
 
   

@@ -1,87 +1,81 @@
 <div class="row m-0 mb-2 mt-2 ">
-  <div class="col-5 p-0 ">
+  <div class="col-12 col-md-6 p-0 ">
     <div class="relative">
-      <img src="assets/img/macchine.PNG" height="400" width="650" alt="" class="img-proj">
-      <div class="description2">
+      <img src="assets/img/macchine.PNG"  alt="" class="img-fluid">
+      <div class="description">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo sint laboriosam mollitia, magnam numquam saepe, itaque porro veritatis laborum ducimus quibusdam tempora ut aperiam perspiciatis eaque nesciunt autem?</p>
       </div>
     </div>
-  </div>
-    <div class="col-6 p-0 m-0">
-      <div class="container">
-          <div class="box">
-            <div class="shadow"></div>
-            <div class="content">
-              <div class="percent" data-text="TS" style="--num: 90">
-                <div class="dot"></div>
-                <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-              </div>
-              <div class="number">
-                <h2>90<span>%</span></h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="shadow"></div>
-            <div class="content">
-              <div class="percent" data-text="Angular" style="--num: 50">
-                <div class="dot"></div>
-                <svg>
-                  <circle cx="70" cy="70" r="70"></circle>
-                  <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-              </div>
-              <div class="number">
-                <h2>50<span>%</span></h2>
-              </div>
-            </div>
-          </div>
-
-
+  </div><div class="col-5 p-0 m-0">
+    <div class="container">
+      <h1 class="heading">This Project in Numbers</h1>
+      <div class="counter">
+        <div class="item">
+          <p class="number">{{ counters['number1'] }}&#37;</p>
+          <p class="label">Hours coding</p>
         </div>
+        <div class="item">
+          <p class="number">{{ counters['number2']}}&#37;</p>
+          <p class="label">Photos taken</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number3'] }}&#37;</p>
+          <p class="label">Hours commuting</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number4']  }}&#37;</p>
+          <p class="label">Projects done</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number5'] }}&#37;</p>
+          <p class="label">Tweets sent</p>
+        </div>
+        <div class="item">
+          <p class="number">{{ counters['number6']}}&#37;</p>
+          <p class="label">Cups of coffee</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 
-<div class="row m-0 mb-2 mt-2">
-  <div class="col-5 col-md-6 p-0 ">
+<div class="row m-0  mt-2">
+  <div class="col-12 col-md-6 p-0 ">
     <div class="relative">
-      <img src="assets/img/list.PNG" height="400" alt="">
+      <img src="assets/img/list.PNG"  class="img-fluid" alt="">
       <div class="description">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo sint laboriosam mollitia, magnam numquam saepe, itaque porro veritatis laborum ducimus quibusdam tempora ut aperiam perspiciatis eaque nesciunt autem?</p>
       </div>
     </div>
   </div>
 
-    <div class="col-6 p-0 m-0">
+    <div class="col-5 p-0 m-0">
       <div class="container2">
-        <h1 class="heading">This Projects in Numbers</h1>
+        <h1 class="heading">This Project in Numbers</h1>
         <div class="counter">
           <div class="item">
-            <p class="number">{{ counters['number1'] | percent:'1.0-0' }}</p>
+            <p class="number">{{ counters['number1'] }}&#37;</p>
             <p class="label">Hours coding</p>
           </div>
           <div class="item">
-            <p class="number">{{ counters['number2']  | percent:'2.0-0'}}</p>
+            <p class="number">{{ counters['number2']}}&#37;</p>
             <p class="label">Photos taken</p>
           </div>
           <div class="item">
-            <p class="number">{{ counters['number3']  | percent:'2.0-0'}}</p>
+            <p class="number">{{ counters['number3'] }}&#37;</p>
             <p class="label">Hours commuting</p>
           </div>
           <div class="item">
-            <p class="number">{{ counters['number4']  | percent:'2.0-0'}}</p>
+            <p class="number">{{ counters['number4']  }}&#37;</p>
             <p class="label">Projects done</p>
           </div>
           <div class="item">
-            <p class="number">{{ counters['number5']  | percent:'2.0-0'}}</p>
+            <p class="number">{{ counters['number5'] }}&#37;</p>
             <p class="label">Tweets sent</p>
           </div>
           <div class="item">
-            <p class="number">{{ counters['number6']  | percent:'2.0-0'}}</p>
+            <p class="number">{{ counters['number6']}}&#37;</p>
             <p class="label">Cups of coffee</p>
           </div>
         </div>
@@ -90,131 +84,4 @@
     </div>
 </div>
 
-<div class="row m-0 mb-2 mt-2">
-  <div class="col-5 col-md-6 p-0 ">
-    <div class="relative">
-      <img src="assets/img/list.PNG" height="400" alt="">
-      <div class="description">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo sint laboriosam mollitia, magnam numquam saepe, itaque porro veritatis laborum ducimus quibusdam tempora ut aperiam perspiciatis eaque nesciunt autem?</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-6 p-0 m-0">
-    <div class="container2">
-      <h1 class="heading">This Projects in Numbers</h1>
-      <div class="counter">
-        <div class="item">
-          <p class="number">{{ counters['number1'] | percent:'1.0-0' }}</p>
-          <p class="label">Hours coding</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number2']  | percent:'2.0-0'}}</p>
-          <p class="label">Photos taken</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number3']  | percent:'2.0-0'}}</p>
-          <p class="label">Hours commuting</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number4']  | percent:'2.0-0'}}</p>
-          <p class="label">Projects done</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number5']  | percent:'2.0-0'}}</p>
-          <p class="label">Tweets sent</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number6']  | percent:'2.0-0'}}</p>
-          <p class="label">Cups of coffee</p>
-        </div>
-      </div>
 
-    </div>
-  </div>
-</div>
-
-<div class="row m-0 mb-2 mt-2">
-  <div class="col-5 col-md-6 p-0 ">
-    <div class="relative">
-      <img src="assets/img/list.PNG" height="400" alt="">
-      <div class="description">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo sint laboriosam mollitia, magnam numquam saepe, itaque porro veritatis laborum ducimus quibusdam tempora ut aperiam perspiciatis eaque nesciunt autem?</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-6 p-0 m-0">
-    <div class="container2">
-      <h1 class="heading">This Projects in Numbers</h1>
-      <div class="counter">
-        <div class="item">
-          <p class="number">{{ counters['number1'] | percent:'1.0-0' }}</p>
-          <p class="label">Hours coding</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number2']  | percent:'2.0-0'}}</p>
-          <p class="label">Photos taken</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number3']  | percent:'2.0-0'}}</p>
-          <p class="label">Hours commuting</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number4']  | percent:'2.0-0'}}</p>
-          <p class="label">Projects done</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number5']  | percent:'2.0-0'}}</p>
-          <p class="label">Tweets sent</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number6']  | percent:'2.0-0'}}</p>
-          <p class="label">Cups of coffee</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="row m-0 mb-2 mt-2">
-  <div class="col-5 col-md-6 p-0 ">
-    <div class="relative">
-      <img src="assets/img/list.PNG" height="400" alt="">
-      <div class="description">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odio nemo sint laboriosam mollitia, magnam numquam saepe, itaque porro veritatis laborum ducimus quibusdam tempora ut aperiam perspiciatis eaque nesciunt autem?</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-6 p-0 m-0">
-    <div class="container2">
-      <h1 class="heading">This Projects in Numbers</h1>
-      <div class="counter">
-        <div class="item">
-          <p class="number">{{ counters['number1'] | percent:'1.0-0' }}</p>
-          <p class="label">Hours coding</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number2']  | percent:'2.0-0'}}</p>
-          <p class="label">Photos taken</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number3']  | percent:'2.0-0'}}</p>
-          <p class="label">Hours commuting</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number4']  | percent:'2.0-0'}}</p>
-          <p class="label">Projects done</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number5']  | percent:'2.0-0'}}</p>
-          <p class="label">Tweets sent</p>
-        </div>
-        <div class="item">
-          <p class="number">{{ counters['number6']  | percent:'2.0-0'}}</p>
-          <p class="label">Cups of coffee</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>

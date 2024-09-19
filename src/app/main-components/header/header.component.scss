@@ -1,31 +1,5 @@
 .menu-pointer:hover{
     cursor: pointer;
 }
-.rotatingText-adjective {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  animation: fade 1s ease-in-out;
-}
 
-@keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-.tech_logos{
-  width: 40px;
-  height: 40px;
-  margin: 5px;
-  transition: transform 0.5s;
-  &:hover{
-    transform: scale(1.1);
-  }
-border-radius: 50%;
-}
 
-.logo{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-left: 200px;
-}
