@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
-* {
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 .row{
     background: #cfd1e1;
 }
@@ -271,7 +266,7 @@ body {
   text-shadow: 1px 1px 1px #ccc;
   text-transform: lowercase;
 }
-.counter .item:hover i, 
+.counter .item:hover i,
 .counter .item:hover p{
   color: rgba(10, 10, 10, 1.0);
 }
@@ -295,14 +290,14 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Fondo semitrasparente per migliorare la leggibilità */
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.5s ease;
-  padding: 20px; /* Aggiungi un po' di spazio attorno al testo */
+  padding: 20px;
   width: 651px;
 }
 .description2 {
@@ -311,14 +306,14 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Fondo semitrasparente per migliorare la leggibilità */
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.5s ease;
-  padding: 20px; /* Aggiungi un po' di spazio attorno al testo */
+  padding: 20px;
   width: 650px;
 }
 
