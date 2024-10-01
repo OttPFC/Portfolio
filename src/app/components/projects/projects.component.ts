@@ -17,27 +17,26 @@ export class ProjectsComponent {
   };
 
   ngOnInit() {
-    this.animateCounter('number1', 90, 3000);
+    this.animateCounter('number1', 6, 3000);
     this.animateCounter('number2', 80, 1700);
     this.animateCounter('number3', 81, 3100);
     this.animateCounter('number4', 16, 3450);
     this.animateCounter('number5', 47, 3300);
-    this.animateCounter('number6', 24, 2175);
   }
 
-  
+
   animateCounter(prop: string, end: number, duration: number) {
     const start = 0;
-    const increment = Math.ceil(end / (duration / 100)); 
+    const increment = Math.ceil(end / (duration / 100));
     let current = start;
 
     const interval = setInterval(() => {
       current += increment;
       if (current > end) {
         current = end;
-        clearInterval(interval); 
+        clearInterval(interval);
       }
-      this.counters[prop] = current; 
-    }, 100); 
+      this.counters[prop] = current;
+    }, 100);
   }
 }

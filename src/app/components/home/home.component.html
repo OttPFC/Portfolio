@@ -1,21 +1,27 @@
 <div class="">
-    <div class="image">
+    <div class="image-wrapper">
+      <div class="image">
         <div class="text-center px-4 py-5 ">
             <div class="row justify-content-between marg g-5 py-5 back">
-                <div class="col-6">
+                <div class="col-6 slide">
                     <h2>I miei Progetti</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique
-                        convallis.</p>
+                    <p>Questa sezione è dedicata ai progetti svolti fino a questo momento, con una descrizione
+                      e alcuni dati utili dello stesso.
+                    </p>
                     <button class="button-30" routerLink="/projects">Progetti</button>
                 </div>
-                <div class="col-6">
+                <div class="col-6 slide2">
                     <h2>Contattami</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem vel ipsum tristique
-                        convallis.</p>
+                    <p>Per un incontro conoscitivo o per un colloquio potete contattarmi direttamente da qua.
+                      Alitrimenti potete scaricare il mio CV <a href="assets/pdf/Alessandro_FullStack _Developer_CV.pdf" download
+                      >qui
+                  </a>.
+                    </p>
                     <button class="button-30" routerLink="/about">Contattami</button>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="position-relative">
         <div class="text-white text-center  size-text  back2">
@@ -40,12 +46,12 @@
             </div>
         </div>
     </div>
-    
+
     <div class="position-relative">
         <div class=" text-center size-text back-about">
             Qualcosa su di me
         </div>
-    
+
     </div>
     <div class="bg-secondary">
             <div class="">
@@ -91,7 +97,7 @@
                     </div>
                     <div class="col-12 col-md-6 p-0">
                         <!--
-                        
+
                         <div class="rotatingText mt-5">
                             <div class="rotatingText-content">
                                 <p class="rotatingText-description">
@@ -109,7 +115,7 @@
                         -->
                         <div class="d-flex flex-column text-center">
                             <img src="assets/img/profile.jpeg"  class="img-fluid" alt="">
-                            
+
                                 <button class="button-30" role="button" routerLink="/about">About me</button>
                         </div>
                     </div>
@@ -117,5 +123,5 @@
             </div>
     </div>
     <button id="topButton" title="Torna in cima" (click)="topFunction()">Top</button>
-    
+
 </div>

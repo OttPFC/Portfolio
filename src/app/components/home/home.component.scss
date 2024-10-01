@@ -92,25 +92,18 @@
 .image-2 {
   position: relative;
   background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  height: 900px;
 }
 
 .image {
   background-image: url("/assets/img/hero6.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 900px;
 }
 
 .image-2 {
   background-image: url("/assets/img/prog2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 900px;
 }
 
 .tech_logos {
@@ -118,14 +111,14 @@
   height: 150px;
   margin: 5px;
   transition: transform 0.5s;
-  
+
 }
 
 .img-profile{
   width: 320px;
   height: 500px;
-  
-  
+
+
 }
 // Images
 
@@ -255,7 +248,7 @@
   opacity: 0;
   transition: opacity 0.5s ease;
   padding: 20px;
-  
+
 }
 
 //Media query
@@ -310,4 +303,28 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+@keyframes slideIn{
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+//Slides
+
+.slide{
+  animation: slideIn 1.2s ease-out forwards;
+}
+
+.slide2{
+  animation: slideIn 1s ease-out forwards;
 }
