@@ -17,14 +17,17 @@
 
 .counter {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 3%;
+  justify-content: space-evenly;
 }
 
 .counter .item {
   vertical-align: middle;
-  width: 100%;
+  width: 16.66%;
   height: 100%;
   text-align: center;
+
   padding: 0;
   margin: 0;
 }
@@ -80,7 +83,7 @@
   opacity: 0;
   transition: opacity 0.5s ease;
   padding: 20px;
-  width: 651px;
+
 }
 
 .relative:hover .img-proj {
