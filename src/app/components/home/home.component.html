@@ -4,7 +4,7 @@
         <div class="text-center px-4 py-5 ">
             <div class="row justify-content-between marg g-5 py-5 back">
                 <div class="col-6 slide">
-                    <h2>I miei Progetti</h2>
+                    <h2>Progetti</h2>
                     <p>Questa sezione è dedicata ai progetti svolti fino a questo momento, con una descrizione
                       e alcuni dati utili dello stesso.
                     </p>
@@ -12,8 +12,8 @@
                 </div>
                 <div class="col-6 slide2">
                     <h2>Contattami</h2>
-                    <p>Per un incontro conoscitivo o per un colloquio potete contattarmi direttamente da qua.
-                      Alitrimenti potete scaricare il mio CV <a href="assets/pdf/Alessandro_FullStack _Developer_CV.pdf" download
+                    <p>Per un incontro conoscitivo o per un colloquio potete contattarmi direttamente qua.
+                      E scaricare il mio CV <a href="assets/pdf/Alessandro_FullStack _Developer_CV.pdf" download
                       >qui
                   </a>.
                     </p>
@@ -29,17 +29,17 @@
         </div>
     </div>
     <div class="image-2 ">
-        <div class="container px-4 py-5 ">
-            <div class="row justify-content-between marg g-5 py-5 ">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-2 ">
+        <div class="container px-4 py-sm-2 py-md-5 ">
+            <div class="row justify-content-between marg2 g-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-2 p-0 text-center">
                     <h2 class="rotatingText-adjective"></h2>
                     <img [src]="currentAdjective.logo" alt="{{ currentAdjective.name }}" class="tech_logos" />
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-2 ">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-2 p-0 text-center">
                     <h2 class="rotatingText-adjective"></h2>
-                    <img [src]="currentAdjective2.logo" alt="{{ currentAdjective2.name }}" class="tech_logos" />
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+                    <img [src]="currentAdjective2.logo" alt="{{ currentAdjective2.name }}" class="tech_logos " />
+                </div> 
+                <div class="col-12 col-sm-12 col-md-12 col-lg-2 p-0 text-center">
                     <h2 class="rotatingText-adjective"></h2>
                     <img [src]="currentAdjective3.logo" alt="{{ currentAdjective3.name }}" class="tech_logos" />
                 </div>
@@ -113,10 +113,15 @@
                             </div>
                         </div>
                         -->
-                        <div class="d-flex flex-column text-center">
-                            <img src="assets/img/profile.jpeg"  class="img-fluid" alt="">
-
-                                <button class="button-30" role="button" routerLink="/about">About me</button>
+                        <div class="rotatingText mt-3">
+                            <div class="d-flex flex-column gap-4 rotatingText-content">
+                                <div>
+                                    <img src="assets/img/profile.jpeg"  class="img-profile" alt="">
+                                </div>
+                                <div class="mb-2">
+                                    <button class="button-30" role="button" routerLink="/about">About me</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

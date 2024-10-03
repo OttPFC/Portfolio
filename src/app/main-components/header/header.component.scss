@@ -17,3 +17,9 @@
 .slideInTop{
   animation: slideInTop 1s ease-out forwards;
 }
+
+@media screen and (max-width:768px){
+  .xs-none{
+    display: none;
+  }
+}
