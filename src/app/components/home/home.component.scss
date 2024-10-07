@@ -116,11 +116,12 @@
 .img-profile{
 width: 300px;
 height: 400px;
-
 }
+
 // Images
 
 //Colors
+
 .back {
   background-color: #282e34;
   color: white;
@@ -158,9 +159,11 @@ height: 400px;
 .bg-secondary{
   height: 700px;
 }
+
 //Spacing
 
 /* About me button */
+
 .button-30 {
   align-items: center;
   appearance: none;
@@ -209,9 +212,11 @@ height: 400px;
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
 /* About me button */
 
 /* Top button */
+
 #topButton {
   display: none;
   position: fixed;
@@ -231,6 +236,7 @@ height: 400px;
 #topButton:hover {
   background-color: #333;
 }
+
 /* Top button */
 
 .relative {
@@ -243,7 +249,7 @@ height: 400px;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   display: flex;
   align-items: center;
@@ -252,28 +258,78 @@ height: 400px;
   transition: opacity 0.5s ease;
   padding: 20px;
 }
+.img-des{
+  width: 100%;
+  height: auto;
+  filter:opacity(1%)
+}
 
+.video_cod{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.index{
+  z-index: 1;
+}
+
+.button-space{
+  margin-top: 20px;
+}
 //Media query
-
 @media screen and (max-width: 320px) {
-  
+  .image,
+  .image-2{
+    height: 800px;
+  }
   .bg-secondary{
     height: 850px;
   }
+  .img-profile{
+    width: 250px;
+    height: 350px;
+    margin-top: 20px;
+  }
+  .description {
+    background: rgba(0, 0, 0, 0.700);
+    padding: 20px;
+    font-size: small;
+  }
+  .size-text {
+    font-size: 20px;
+    padding: 25px;
+  }
+  .marg {
+    margin-top: 100px;
+  }
+  .marg2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .padding-logos{
+    padding-top: 50px;
+  }
 }
-@media screen and (max-width: 375px) {
-  
+
+@media screen and (min-width: 375px) {
+  .image,
+  .image-2{
+    //background-attachment: scroll;
+    height: 775px;
+  }
   .bg-secondary{
     height: 900px;
   }
-}
-@media screen and (max-width: 425px) {
-  
-  .bg-secondary{
-    height: 950px;
+  .img-profile{
+    width: 250px;
+    height: 350px;
+    margin-top: 20px;
   }
-}
-@media only screen and (max-width: 768px) {
+  
   .marg {
     margin-top: 100px;
   }
@@ -285,22 +341,52 @@ height: 400px;
     font-size: 20px;
     padding: 25px;
   }
+  
+  .padding-logos{
+    padding-top: 50px;
+  }
+  .button-space{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .image,
+  .image-2{
+    //background-attachment: scroll;
+    height: 775px;
+  }
+  .bg-secondary{
+    height: 950px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .image,
+  .image-2{
+    //background-attachment: scroll;
+    height: 900px;
+  }
+  .marg {
+    margin-top: 200px;
+  }
+  .marg2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .padding-logos{
+    padding-top: 50px;
+
+  }
+  .size-text {
+    font-size: 20px;
+    padding: 25px;
+  }
   .tech_logos {
     margin: 25px;
   }
   .description {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: rgba(0, 0, 0, 0.700);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
     padding: 20px;
     font-size: small;
   }
@@ -309,13 +395,29 @@ height: 400px;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .image,
   .image-2{
     //background-attachment: scroll;
-    height: 775px;
+    height: 800px;
   }
-  
+  .padding-logos{
+    padding-top: 250px;
+    
+  }
+  .marg {
+    margin-top: 200px;
+  }
+  .tech_logos{
+    margin: 0;
+  }
+  .button-space{
+    margin-top: 60px;
+  }
+  .size-text {
+    font-size: 60px;
+    padding: 10px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -323,10 +425,14 @@ height: 400px;
     margin-top: 200px;
   }
   .marg2 {
-    margin-top: 250px;
+    margin-top: 200px;
   }
   .bg-secondary{
     height: 900px;
+  }
+  .padding-logos{
+    padding-top: 50px;
+    
   }
 }
 
@@ -402,3 +508,5 @@ height: 400px;
 .slide2{
   animation: slideIn 1s ease-out forwards;
 }
+
+

@@ -75,7 +75,7 @@ export class HomeComponent {
   onWindowScroll() {
     const button = document.getElementById("topButton");
     const des = document.getElementById("des");
-    if (window.scrollY > 1500 && 1900) {  
+    if (window.scrollY > 1300 ) {  
       button!.style.display = "block";
       des!.style.opacity = "1";
     } else {
