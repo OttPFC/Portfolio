@@ -1,27 +1,27 @@
 <div class="">
     <div class="image-wrapper">
-      <div class="image">
-        <div class="text-center px-4 py-5 ">
-            <div class="row justify-content-between marg g-5 py-5 back">
-                <div class="col-6 slide">
-                    <h2>Progetti</h2>
-                    <p>Questa sezione è dedicata ai progetti svolti fino a questo momento, con una descrizione
-                      e alcuni dati utili dello stesso.
-                    </p>
-                    <button class="button-30" routerLink="/projects">Progetti</button>
-                </div>
-                <div class="col-6 slide2">
-                    <h2>Contattami</h2>
-                    <p>Per un incontro conoscitivo o per un colloquio potete contattarmi direttamente qua.
-                      E scaricare il mio CV <a href="assets/pdf/Alessandro_FullStack _Developer_CV.pdf" download
-                      >qui
-                  </a>.
-                    </p>
-                    <button class="button-30" routerLink="/about">Contattami</button>
+        <div class="image">
+            <div class="text-center px-4 py-5 ">
+                <div class="row justify-content-between marg g-5 py-5 back">
+                    <div class="col-6 slide">
+                        <h2>Progetti</h2>
+                        <p>Questa sezione è dedicata ai progetti svolti fino a questo momento, con una descrizione
+                            e alcuni dati utili dello stesso.
+                        </p>
+                        <button class="button-30" routerLink="/projects">Progetti</button>
+                    </div>
+                    <div class="col-6 slide2">
+                        <h2>Contattami</h2>
+                        <p>Per un incontro conoscitivo o per un colloquio potete contattarmi direttamente qua.
+                            E scaricare il mio CV <a href="assets/pdf/Alessandro_FullStack _Developer_CV.pdf"
+                                download>qui
+                            </a>.
+                        </p>
+                        <button class="button-30" routerLink="/about">Contattami</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="position-relative">
         <div class="text-white text-center  size-text  back2">
@@ -38,7 +38,7 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-2 p-0 text-center">
                     <h2 class="rotatingText-adjective"></h2>
                     <img [src]="currentAdjective2.logo" alt="{{ currentAdjective2.name }}" class="tech_logos " />
-                </div> 
+                </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-2 p-0 text-center">
                     <h2 class="rotatingText-adjective"></h2>
                     <img [src]="currentAdjective3.logo" alt="{{ currentAdjective3.name }}" class="tech_logos" />
@@ -62,36 +62,40 @@
             <source src="assets/video/video_cod3.mp4" type="video/mp4">
             Il tuo browser non supporta il tag video.
         </video>
-            <div class="">
-                <div class="row m-0">
-                    <div class="col-12 col-md-6 col-lg-6 p-0  ">
-                        <div class="relative" style="z-index: 1;">
-                            <img src="assets/img/hero1.jpg" class="img-des " alt="">
-                            <div id="des" class="description d-flex flex-column ">
-                                <div>
-                                    <h1>Alessandro Mazzocchi</h1>
-                                    <p>Nato a <span>Spoleto</span> il 10/07/1997</p>
-                                </div>
-                                <div class="">Sono una persona dinamica e ambiziosa. Sempre alla ricerca di opportunità per migliorare le mie capacità e crescere professionalmente, mi impegno ad apportare un contributo positivo in ogni contesto lavorativo.
-                                    Sono estremamente motivato a sviluppare costantemente le mie competenze. Credo nel valore della collaborazione e trovo molto stimolante il lavoro di gruppo per i benefici che comporta. Il confronto e lo scambio di idee sono sempre alla base della crescita personale e professionale. </div>
+        <div class="">
+            <div class="row m-0">
+                <div class="col-12 col-md-6 col-lg-6 p-0  ">
+                    <div class="relative" style="z-index: 1;">
+                        <img src="assets/img/hero1.jpg" class="img-des " alt="">
+                        <div id="des" class="description d-flex flex-column ">
+                            <div>
+                                <h1>Alessandro Mazzocchi</h1>
+                                <p>Nato a <span>Spoleto</span> il 10/07/1997</p>
+                            </div>
+                            <div class="">Sono una persona dinamica e ambiziosa. Sempre alla ricerca di opportunità per
+                                migliorare le mie capacità e crescere professionalmente, mi impegno ad apportare un
+                                contributo positivo in ogni contesto lavorativo.
+                                Sono estremamente motivato a sviluppare costantemente le mie competenze. Credo nel
+                                valore della collaborazione e trovo molto stimolante il lavoro di gruppo per i benefici
+                                che comporta. Il confronto e lo scambio di idee sono sempre alla base della crescita
+                                personale e professionale. </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-0 relative index">
+                    <div class="text-center">
+                        <div class="d-flex flex-column gap-3">
+                            <div>
+                                <img src="assets/img/profile.jpeg" class="img-profile" alt="">
+                            </div>
+                            <div class="">
+                                <button class="button-30" role="button" routerLink="/about">About me</button>
                             </div>
                         </div>
-                    </div> 
-                    <div class="col-12 col-md-6 p-0 relative index">
-                            <div class="text-center">
-                                <div class="d-flex flex-column gap-3">
-                                    <div>
-                                        <img src="assets/img/profile.jpeg" class="img-profile" alt="">
-                                    </div>
-                                    <div class="">
-                                        <button class="button-30" role="button" routerLink="/about">About me</button>
-                                    </div>
-                                </div>
-                            </div>                        
-                    </div>                    
+                    </div>
                 </div>
             </div>
+        </div>
     </div>
     <button id="topButton" title="Torna in cima" (click)="topFunction()">Top</button>
-
 </div>
