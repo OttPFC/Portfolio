@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 
 // rotating text
 .rotatingText {
@@ -287,7 +287,7 @@ height: 400px;
     height: 800px;
   }
   .bg-secondary{
-    height: 850px;
+    height: 800px;
   }
   .img-profile{
     width: 250px;
@@ -319,7 +319,7 @@ height: 400px;
   .image,
   .image-2{
     //background-attachment: scroll;
-    height: 775px;
+    height: 850px;
   }
   .bg-secondary{
     height: 900px;
@@ -331,7 +331,7 @@ height: 400px;
   }
   
   .marg {
-    margin-top: 100px;
+    margin-top: 200px;
   }
   .marg2 {
     margin-top: 0px;
@@ -354,10 +354,15 @@ height: 400px;
   .image,
   .image-2{
     //background-attachment: scroll;
-    height: 775px;
+    height: 850px;
   }
   .bg-secondary{
-    height: 950px;
+    height: 900px;
+  }
+  
+  .padding-logos{
+    padding-top: 30px;
+
   }
 }
 
@@ -375,7 +380,7 @@ height: 400px;
     margin-bottom: 20px;
   }
   .padding-logos{
-    padding-top: 50px;
+    padding-top: 0px;
 
   }
   .size-text {
@@ -386,12 +391,12 @@ height: 400px;
     margin: 25px;
   }
   .description {
-    background: rgba(0, 0, 0, 0.700);
+    background: rgba(0, 0, 0, 0.900);
     padding: 20px;
     font-size: small;
   }
   .bg-secondary{
-    height: 700px;
+    height: 600px;
   }
 }
 
