@@ -8,7 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 900px;
-  width: auto;
+  
 }
 
 .image {
@@ -72,6 +72,7 @@ height: 400px;
 .bg-secondary{
   height: 700px;
 }
+
 
 //Spacing
 
@@ -349,14 +350,28 @@ height: 400px;
     padding-top: 50px;
     
   }
+  .description{
+    height: auto;;
+  }
+  .img-profile{
+    margin-top: 250px;
+  }
+  .description-par{
+    
+    width: 50%;
+    font-size: large;
+  }
+  .width-50{
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 2560px) {
   .marg {
-    margin-top: 400px;
+    margin-top: 200px;
   }
   .marg2 {
-    margin-top: 450px;
+    margin-top: 250px;
   }
   .image,
   .image-2{
@@ -366,20 +381,15 @@ height: 400px;
     height: 100vh;
   }
   .description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
     padding: 20px;
-    height: 90vh;
+    height: 95vh;
+  }
+  
+  .description-par{
+    font-size: large;
+  }
+  .width-50{
+    width: 50%;
   }
 }
 
