@@ -8,6 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 900px;
+  width: auto;
 }
 
 .image {
@@ -198,7 +199,6 @@ height: 400px;
   .image,
   .image-2{
     height: 800px;
-    background-attachment: scroll;
   }
   .bg-secondary{
     height: 800px;
@@ -225,7 +225,7 @@ height: 400px;
     margin-bottom: 0px;
   }
   .padding-logos{
-    padding-top: 50px;
+    padding-top: 0px;
   }
 }
 
