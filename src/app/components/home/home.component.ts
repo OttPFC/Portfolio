@@ -11,34 +11,34 @@ export class HomeComponent {
   
   
   adjectives = [
-    { name: 'JavaScript', logo: '/assets/img/logo-javascript.svg' },
-    { name: 'Html', logo: '/assets/img/html-1.svg' },
-    { name: 'Angular', logo: '/assets/img/angular-icon.svg' },
-    { name: 'Spring Boot', logo: '/assets/img/spring-3.svg' },
-    { name: 'CSS', logo: '/assets/img/css-3.svg' },
-    { name: 'Java', logo: '/assets/img/Java_Logo.svg' },
-    { name: 'PostgreSQL', logo: '/assets/img/postgresql.svg' },
-    { name: 'TypeScript', logo: '/assets/img/typescript.svg' }
+    { name: 'JavaScript', logo: '/assets/svg/logo-javascript.svg' },
+    { name: 'Html', logo: '/assets/svg/html-1.svg' },
+    { name: 'Angular', logo: '/assets/svg/angular-icon.svg' },
+    { name: 'Spring Boot', logo: '/assets/svg/spring-3.svg' },
+    { name: 'CSS', logo: '/assets/svg/css-3.svg' },
+    { name: 'Java', logo: '/assets/svg/Java_Logo.svg' },
+    { name: 'PostgreSQL', logo: '/assets/svg/postgresql.svg' },
+    { name: 'TypeScript', logo: '/assets/svg/typescript.svg' }
   ];
   adjectives2 = [
-    { name: 'Java', logo: '/assets/img/Java_Logo.svg' },
-    { name: 'CSS', logo: '/assets/img/css-3.svg' },
-    { name: 'PostgreSQL', logo: '/assets/img/postgresql.svg' },
-    { name: 'JavaScript', logo: '/assets/img/logo-javascript.svg' },
-    { name: 'TypeScript', logo: '/assets/img/typescript.svg' },
-    { name: 'Spring Boot', logo: '/assets/img/spring-3.svg' },
-    { name: 'Html', logo: '/assets/img/html-1.svg' },
-    { name: 'Angular', logo: '/assets/img/angular-icon.svg' },    
+    { name: 'Java', logo: '/assets/svg/Java_Logo.svg' },
+    { name: 'CSS', logo: '/assets/svg/css-3.svg' },
+    { name: 'PostgreSQL', logo: '/assets/svg/postgresql.svg' },
+    { name: 'JavaScript', logo: '/assets/svg/logo-javascript.svg' },
+    { name: 'TypeScript', logo: '/assets/svg/typescript.svg' },
+    { name: 'Spring Boot', logo: '/assets/svg/spring-3.svg' },
+    { name: 'Html', logo: '/assets/svg/html-1.svg' },
+    { name: 'Angular', logo: '/assets/svg/angular-icon.svg' },    
   ]
   adjectives3 = [
-    { name: 'PostgreSQL', logo: '/assets/img/postgresql.svg' },
-    { name: 'TypeScript', logo: '/assets/img/typescript.svg' },
-    { name: 'Spring Boot', logo: '/assets/img/spring-3.svg' },
-    { name: 'JavaScript', logo: '/assets/img/logo-javascript.svg' },
-    { name: 'Angular', logo: '/assets/img/angular-icon.svg' },
-    { name: 'Html', logo: '/assets/img/html-1.svg' },
-    { name: 'Java', logo: '/assets/img/Java_Logo.svg' },
-    { name: 'CSS', logo: '/assets/img/css-3.svg' },
+    { name: 'PostgreSQL', logo: '/assets/svg/postgresql.svg' },
+    { name: 'TypeScript', logo: '/assets/svg/typescript.svg' },
+    { name: 'Spring Boot', logo: '/assets/svg/spring-3.svg' },
+    { name: 'JavaScript', logo: '/assets/svg/logo-javascript.svg' },
+    { name: 'Angular', logo: '/assets/svg/angular-icon.svg' },
+    { name: 'Html', logo: '/assets/svg/html-1.svg' },
+    { name: 'Java', logo: '/assets/svg/Java_Logo.svg' },
+    { name: 'CSS', logo: '/assets/svg/css-3.svg' },
   ]
 
   currentIndex = 0;
