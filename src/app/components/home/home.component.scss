@@ -2,13 +2,11 @@
 
 // Images
 .image, .image-2 {
-  position: relative;
-  background-attachment: fixed;
+  height: 900px;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 900px;
-
 }
 
 .image {
@@ -315,6 +313,12 @@ height: 400px;
 @media only screen and (min-width: 1024px) {
   .image,
   .image-2{
+
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
     height: 800px;
   }
   .padding-logos{
@@ -337,6 +341,11 @@ height: 400px;
 }
 
 @media only screen and (min-width: 1440px) {
+  .image,
+  .image-2{
+  position: relative;
+  background-attachment: fixed;
+  }
   .marg {
     margin-top: 200px;
   }
@@ -376,6 +385,11 @@ height: 400px;
   .image,
   .image-2{
     height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   }
   .bg-secondary{
     height: 100vh;
