@@ -1,6 +1,8 @@
-import { Component, inject, TemplateRef } from '@angular/core';
+import { Component, inject, TemplateRef, ViewChild } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import emailjs, { EmailJSResponseStatus } from 'emailjs-com'; // Aggiungi emailjs-com
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import iziToast from 'izitoast';
 
 @Component({
   selector: 'app-contact-form-modal',
@@ -9,11 +11,28 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com'; // Aggiungi emailj
 })
 export class ContactFormModalComponent {
 
-  private modalService = inject(NgbModal);
+  @ViewChild('content', { static: true }) content!: TemplateRef<any>; // Riferimento al template del modale
+
+  currentRoute: string = '';
+
+  constructor(private router: Router, private route: ActivatedRoute, private modalService: NgbModal) {
+    this.router.events.subscribe((event: any) => {
+      if (event.url) {
+        this.currentRoute = event.url;
+      }
+    });
+  }
   closeResult = '';
 
-  open(content: TemplateRef<any>) {
-    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
+  ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      if (params['openModal']) {
+this.open();
+      }
+    });
+  }
+  open() {
+    this.modalService.open(this.content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
       (result) => {
         this.closeResult = `Closed with: ${result}`;
       },
@@ -40,10 +59,21 @@ export class ContactFormModalComponent {
     emailjs.sendForm('service_5ly09eb', 'template_l8hpntx', e.target as HTMLFormElement, 'rQpV_HeC9usBUqZY0')
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
-        alert('Email inviata con successo!');
+        iziToast.success({
+          timeout:1500,
+          title:"Success",
+          message: "Email inviata con successo!",
+          position: 'center'
+        });
+        this.modalService.dismissAll();
       }, (error) => {
         console.log(error.text);
-        alert('Errore durante l\'invio dell\'email.');
+        iziToast.error({
+          timeout:1500,
+          title:"Error",
+          message: "Errore durante l'invio dell'email.",
+          position: 'center'
+        });
       });
   }
 }

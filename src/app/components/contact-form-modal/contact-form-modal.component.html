@@ -24,6 +24,13 @@
       <button type="button" class="btn btn-outline-secondary" (click)="modal.close('Save click')">Chiudi</button>
     </div>
   </ng-template>
-  
-  <button class="btn btn-outline-primary" (click)="open(content)">Contattami</button>
-  
+
+  <button
+  [ngClass]="{
+
+    'btn btn-outline-primary': currentRoute === '/about',
+    'btn btn-outline-primary due': currentRoute === '/about?openModal=true',
+    'button-30': currentRoute === '/'
+    }" (click)="open()">Contattami</button>
+
+

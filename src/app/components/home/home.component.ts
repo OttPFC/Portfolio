@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,16 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  @ViewChild('rotatingText') rotatingText!: ElementRef;
+  currentRoute: string = '';
 
-  
-  
+  constructor(private router: Router) {
+    this.router.events.subscribe((event: any) => {
+      if (event.url) {
+        this.currentRoute = event.url;
+      }
+    });
+  }
+
   adjectives = [
     { name: 'JavaScript', logo: '/assets/svg/logo-javascript.svg' },
     { name: 'Html', logo: '/assets/svg/html-1.svg' },
@@ -28,7 +35,7 @@ export class HomeComponent {
     { name: 'TypeScript', logo: '/assets/svg/typescript.svg' },
     { name: 'Spring Boot', logo: '/assets/svg/spring-3.svg' },
     { name: 'Html', logo: '/assets/svg/html-1.svg' },
-    { name: 'Angular', logo: '/assets/svg/angular-icon.svg' },    
+    { name: 'Angular', logo: '/assets/svg/angular-icon.svg' },
   ]
   adjectives3 = [
     { name: 'PostgreSQL', logo: '/assets/svg/postgresql.svg' },
@@ -48,7 +55,7 @@ export class HomeComponent {
   observer!: IntersectionObserver;
   intervalId: any;
   showButton = false;
-  
+
   ngOnInit(): void {
     this.startRotation();
   }
@@ -57,25 +64,25 @@ export class HomeComponent {
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.adjectives.length;
       this.currentAdjective = this.adjectives[this.currentIndex];
-    }, 2000); 
-    
+    }, 2000);
+
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.adjectives2.length;
       this.currentAdjective2 = this.adjectives2[this.currentIndex];
     }, 3000);
-    
+
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.adjectives3.length;
       this.currentAdjective3 = this.adjectives3[this.currentIndex];
     }, 1000);
   }
-  
+
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const button = document.getElementById("topButton");
     const des = document.getElementById("des");
-    if (window.scrollY > 1300 ) {  
+    if (window.scrollY > 1300 ) {
       button!.style.display = "block";
       des!.style.opacity = "1";
     } else {
@@ -83,9 +90,9 @@ export class HomeComponent {
       des!.style.opacity = "0";
     }
   }
-  
+
   topFunction() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  
+
 }
