@@ -8,7 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 900px;
-  
+
 }
 
 .image {
@@ -196,7 +196,7 @@ height: 400px;
   margin-top: 20px;
 }
 //Media query
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 374px) {
   .image,
   .image-2{
     height: 800px;
@@ -207,7 +207,7 @@ height: 400px;
   .img-profile{
     width: 250px;
     height: 350px;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   .description {
     background: rgba(0, 0, 0, 0.700);
@@ -230,7 +230,7 @@ height: 400px;
   }
 }
 
-@media screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) {
   .image,
   .image-2{
     height: 850px;
@@ -243,7 +243,7 @@ height: 400px;
     height: 350px;
     margin-top: 20px;
   }
-  
+
   .marg {
     margin-top: 200px;
   }
@@ -255,7 +255,7 @@ height: 400px;
     font-size: 20px;
     padding: 25px;
   }
-  
+
   .padding-logos{
     padding-top: 50px;
   }
@@ -264,7 +264,7 @@ height: 400px;
   }
 }
 
-@media screen and (min-width: 425px) {
+@media only screen and (min-width: 425px) {
   .image,
   .image-2{
     height: 850px;
@@ -272,7 +272,7 @@ height: 400px;
   .bg-secondary{
     height: 900px;
   }
-  
+
   .padding-logos{
     padding-top: 30px;
 
@@ -319,7 +319,7 @@ height: 400px;
   }
   .padding-logos{
     padding-top: 250px;
-    
+
   }
   .marg {
     margin-top: 200px;
@@ -348,7 +348,7 @@ height: 400px;
   }
   .padding-logos{
     padding-top: 50px;
-    
+
   }
   .description{
     height: auto;;
@@ -357,7 +357,7 @@ height: 400px;
     margin-top: 250px;
   }
   .description-par{
-    
+
     width: 50%;
     font-size: large;
   }
@@ -384,7 +384,7 @@ height: 400px;
     padding: 20px;
     height: 95vh;
   }
-  
+
   .description-par{
     font-size: large;
   }
