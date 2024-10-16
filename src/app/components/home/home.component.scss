@@ -262,7 +262,7 @@ height: 400px;
   }
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 425px) and (max-width:767px) {
   .image,
   .image-2{
     height: 850px;
@@ -273,7 +273,9 @@ height: 400px;
 
   .padding-logos{
     padding-top: 30px;
-
+  }
+  .img-des{
+    height: 400px;
   }
 }
 
@@ -335,6 +337,10 @@ height: 400px;
     font-size: 60px;
     padding: 10px;
   }
+
+  .img-des{
+    height: 600px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -370,6 +376,10 @@ height: 400px;
   .width-50{
     width: 50%;
   }
+
+  .img-des{
+    height: 800px;
+  }
 }
 
 @media only screen and (min-width: 2560px) {
@@ -399,6 +409,7 @@ height: 400px;
   .width-50{
     width: 50%;
   }
+
 }
 
 
