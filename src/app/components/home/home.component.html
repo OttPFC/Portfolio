@@ -25,11 +25,13 @@
         </div>
     </div>
     <div class="position-relative">
-        <div class="text-center size-text  back2">
-            Tecnologie usate per i progetti
+        <div class="text-center size-text back2">
+            <img [src]="currentAdjective.logo" alt="{{ currentAdjective.name }}" class="tech_logos2" />
+            <span class="mx-4">Tecnologie usate per i progetti</span>
+            <img [src]="currentAdjective2.logo" alt="{{ currentAdjective.name }}" class="tech_logos2" />
         </div>
     </div>
-    <div class="image-2 ">
+    <div class="image-2">
         <div class="container px-4 padding-logos ">
             <div class="row justify-content-evenly marg2 g-5">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-2 p-0 text-center">
@@ -49,6 +51,12 @@
                 <button class="button-30 button-space" role="button" routerLink="/projects">Scopri</button>
             </div>
         </div>
+        <!--
+            
+        <app-projects></app-projects>
+        -->
+        
+        
     </div>
 
     <div class="position-relative">
@@ -104,12 +112,6 @@
             </div>
         </div>
     </div>
-    <button id="topButton" title="Torna in cima" (click)="topFunction()">Top</button>
-    <button class="button">
-      <svg class="svgIcon" viewBox="0 0 384 512">
-        <path
-          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-        ></path>
-      </svg>
-    </button>
+    <button id="topButton" class="Btn" title="Torna in cima" (click)="topFunction()"><svg height="1.2em" class="arrow" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path></svg>
+        </button>
 </div>

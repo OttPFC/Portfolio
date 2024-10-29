@@ -1,4 +1,132 @@
 
+
+.relative {
+  position: relative;
+}
+
+.img-proj {
+  transition: opacity 0.5s ease;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 20px;
+}
+
+.relative:hover .img-proj {
+  opacity: 0.4;
+}
+
+.relative:hover .description {
+  opacity: 1;
+}
+
+.relative:hover .description2 {
+  opacity: 1;
+}
+
+@media (max-width: 786px) {
+  .counter .item {
+    flex: 0 0 50%;
+  }
+}
+
+
+.carousel .picsum-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel img {
+  max-width: 600px;
+  height: auto;
+}
+
+
+.marg2 {
+  padding-top: 250px;
+}
+
+@media only screen and (max-width: 374px) {
+  
+  .marg2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .carousel img {
+    max-width: 250px;
+    height: 200px;
+  }
+  .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  
+  .marg2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width:768px) {
+  
+}
+
+@media only screen and (min-width: 768px) {
+
+  .marg2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  
+}
+
+@media only screen and (min-width: 1440px) {
+  
+  .marg2 {
+    padding-top: 200px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  
+  .marg2 {
+    padding-top: 250px;
+  }
+
+}
+
+/*
+
 .row {
   background: #cfd1e1;
 }
@@ -53,46 +181,4 @@
 .counter .item:hover p {
   color: rgba(10, 10, 10, 1);
 }
-
-.relative {
-  position: relative;
-}
-
-.img-proj {
-  transition: opacity 0.5s ease;
-}
-
-.description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  padding: 20px;
-
-}
-
-.relative:hover .img-proj {
-  opacity: 0.4;
-}
-
-.relative:hover .description {
-  opacity: 1;
-}
-
-.relative:hover .description2 {
-  opacity: 1;
-}
-
-@media (max-width: 786px) {
-  .counter .item {
-    flex: 0 0 50%;
-  }
-}
+  */

@@ -22,6 +22,12 @@
   transition: transform 0.5s;
 }
 
+.tech_logos2 {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s;
+}
+
 .img-profile{
 width: 300px;
 height: 400px;
@@ -130,6 +136,7 @@ height: 400px;
 
 /* Top button */
 
+
 #topButton {
   display: none;
   position: fixed;
@@ -142,12 +149,30 @@ height: 400px;
   background-color: #555;
   color: white;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(#44ea76, #39fad7);
+  border-radius: 50%;
 }
 
-#topButton:hover {
-  background-color: #333;
+.arrow path {
+  fill: white;
+}
+
+#topButton:hover .arrow {
+  animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Top button */
@@ -469,5 +494,7 @@ height: 400px;
 .slide2{
   animation: slideIn 1s ease-out forwards;
 }
+
+
 
 
